@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: -webkit-linear-gradient(red, blue);
+  border-radius: 10px;
+  background-clip: content-box;
+}
+
+.nav-bar {
+  height: 80px;
+  background-color: #cf6f9d;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  filter: drop-shadow(4px 8px 7px rgba(0, 0, 0, 0.4));
+}
+
+.nav-bar h2 {
+  margin-left: 10px;
+  font-size: 35px;
+  text-decoration: none;
+  color: #9029a5;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 75px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fdfafa;
+  font-size: larger;
+  font-family: cursive;
+}
+
+ul li a.active {
+  color: rgb(144, 41, 165);
+  transform: scale(1.15);
+  font-size: larger;
+}
+
+ul li a:hover {
+  color: rgb(144, 41, 165);
+}
+
+ul .log-btn a {
+  padding: 15px 25px;
+  background-color: #64bcf4;
+  border: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 4px 8px 7px rgba(0, 0, 0, 0.4);
+}
+
+ul .log-btn a:hover {
+  transform: scale(1.05);
+}
+
+#checkbox,
+#checkbtn i {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#checkbox:checked ~ .menu {
+  left: 0;
+}
+
+.background {
+  background-image: url(background.jpg);
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.wrapper {
+  margin: 0 50px;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 10px;
+  text-shadow: -4px 8px 7px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper h3 {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 20px;
+  text-shadow: -4px 8px 7px rgba(0, 0, 0, 0.4);
+  /* text-align: center; */
+}
+
+.wrapper p {
+  padding-bottom: 30px;
+  color: #303f94;
+  /* text-align: center; */
+  text-shadow: -4px 8px 7px rgba(0, 0, 0, 0.4);
+}
+
+.product-btn button,
+.wrapper button {
+  padding: 10px 30px;
+  background-color: #cf6f9d;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: -4px 8px 7px rgba(0, 0, 0, 0.4);
+}
+
+.product-btn button a,
+.wrapper button a {
+  text-decoration: none;
+  color: #fdfafa;
+  font-size: 25px;
+}
+
+.product-btn button:hover,
+.wrapper button:hover {
+  box-shadow: -4px 8px 7px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.about {
+  margin: 100px 50px;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+  color: #cf6f9d;
+  margin-top: 100px;
+}
+
+.about-container {
+  margin-top: 50px;
+  display: flex;
+}
+
+.about-container img {
+  width: 50%;
+  height: 50%;
+  border-radius: 15px;
+}
+
+.about-container p {
+  margin-left: 70px;
+  color: rgb(214, 143, 155);
+}
+
+.product-text {
+  color: rgb(214, 143, 155);
+  text-align: center;
+  padding: 25px 0;
+  margin: 0 20px;
+}
+
+.product {
+  margin: 0 50px;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 8px solid orangered;
+  position: relative;
+  margin: 25px 0;
+}
+
+.card-img,
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 100%;
+  background-color: orangered;
+  color: rgb(57, 17, 88);
+  font-size: 30px;
+  padding-top: 30px;
+  font-family: "Mooli", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 8px;
+  transition: 1s all ease;
+}
+
+.card:hover .card-body {
+  top: 60%;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.review-wrapper {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.customer-card {
+  background-color: #fff3f3;
+  display: flex;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.customer-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.review-text p {
+  color: #303f94;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.review-text .fa-solid,
+.fa-regular {
+  color: goldenrod;
+}
+
+.poster {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin: 50px 0 25px;
+  position: relative;
+}
+
+.poster-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-body h1 {
+  font-family: "Mooli", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #fdfafa;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  text-shadow: -4px 15px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  outline: none;
+  font-size: 20px;
+  color: #fdfafa;
+  background-color: #cf6f9d;
+  border: 0;
+  font-family: "poppins", sans-serif;
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: -4px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.icons i {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.ftr-text {
+  text-align: center;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.footer p {
+  border-top: 1px solid #fdfafa;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 956px) {
+  #checkbtn i {
+    display: block;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    line-height: 60px;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #cf6f9d;
+    transition: 0.5s all ease;
+  }
+
+  .menu li {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .menu .log-btn a {
+    padding: 0;
+    background-color: #cf6f9d;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 75%;
+    margin: 20px 20px 0 20px;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .about-container {
+    display: grid;
+    place-items: center;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .about-container img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .about-container p {
+    margin-left: 0;
+  }
+
+  .product {
+    margin: 0 35px;
+    column-gap: 10px;
+  }
+
+  .card-body {
+    font-size: 20px;
+    padding-top: 18px;
+  }
+
+  .review-wrapper {
+    display: block;
+  }
+
+  .customer-card {
+    width: 100%;
+  }
+
+  .poster-body h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .poster-body h1 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 442px) {
+  .nav-bar {
+    padding: 0 10px 0 0;
+  }
+
+  .nav-bar h2 {
+    margin-left: 0;
+    font-size: 25px;
+  }
+
+  .wrapper h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .wrapper h3 {
+    font-size: 25px;
+  }
+
+  .wrapper p {
+    font-size: 12px;
+  }
+
+  .wrapper button {
+    padding: 9px 25px;
+  }
+
+  .wrapper button a {
+    font-size: 20px;
+  }
+
+  .about {
+    margin: 20px;
+  }
+
+  .heading {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .about-container img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .about-container p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .product-text {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    height: 250px;
+  }
+
+  .review-wrapper {
+    margin: 0 10px;
+  }
+
+  .poster-body h1 {
+    font-size: 12px;
+  }
+
+  .ftr-text {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 12px 0;
+  }
+
+  .footer p {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
