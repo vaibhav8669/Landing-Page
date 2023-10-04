@@ -113,7 +113,7 @@ ul .log-btn a:hover {
 }
 
 #checkbox:checked ~ .menu {
-  left: 0;
+  left: -50%;
 }
 
 .background {
@@ -389,7 +389,7 @@ ul .log-btn a:hover {
     padding-top: 10px;
     line-height: 60px;
     position: fixed;
-    top: 80px;
+    top: 0;
     left: -100%;
     background: #cf6f9d;
     transition: 0.5s all ease;
@@ -398,6 +398,7 @@ ul .log-btn a:hover {
   .menu li {
     display: block;
     text-align: center;
+    margin-left:60%;
     font-family: sans-serif;
   }
 
